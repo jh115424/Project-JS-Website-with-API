@@ -1,0 +1,174 @@
+body {
+  background-image: url(http://s3.amazonaws.com/architecture-org/files/buildings/riverwalk-eric-allix-rogers-01.jpg);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-resolution: 500dpi;
+ 
+}
+
+.restaurant-name h5 {
+  text-align: center;
+}
+
+.heading {
+  margin-left: auto;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: auto;
+  width: 75%;
+  height: 75%px;
+  display: flex;
+  position: sticky;
+  font-size: 35px;
+  font-family: cursive;
+  font-weight: 600;
+  justify-content: space-around;
+  align-items: baseline;
+  color: white;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 10px #8e1f44;
+  background-color: #100f0f;
+}
+
+.footer,
+.collection {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 100px;
+  border-radius: 10px;
+  font-size: 25px;
+  margin-right: auto;
+  width: 90%;
+  margin-left: auto;
+  box-shadow: 0px 0px 3px 10px #8e1f44;
+  background-color: #8e8585;
+}
+
+.background-image {
+  display: block;
+  height: 325px;
+  margin-left: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  margin-right: auto;
+  width: 50%;
+  box-shadow: 0px 0px 3px 15px #3f3e3f;
+}
+
+.banner-container {
+  display: flex;
+  font-size: 90px;
+  font-style: italic;
+  font-family: fantasy;
+  margin-top: 100px;
+  line-height: 2.7;
+}
+
+/* CARDS */
+
+/* cards */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin-top: 100px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card {
+  flex-direction: column;
+  padding: 16px;
+  justify-content: flex-end;
+  border-radius: 15px;
+  width: 450px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-wrapper:hover {
+  box-shadow: 0px 0px 3px 15px #3f3e3f;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-header,
+.card-content {
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: -50px;
+  width: min-content;
+}
+
+.card-image-top {
+  margin-top: 40px;
+  width: 400px;
+}
+
+.intro {
+  border-radius: 10px;
+  color: #f16a8e;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0px 0px 3px 10px #3f3e3f;
+  width: -webkit-fill-available;
+  margin-right: 20px;
+  background-color: black;
+}
+
+img {
+  margin-left: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  margin-right: auto;
+  justify-content: end;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 10px #f16a8e;
+}
+span {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* buttons */
+.sort {
+  width: 225px;
+  padding: 10px;
+  background-color: #f16a8e;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  border-radius: 7px;
+  width: 50px;
+}
+
+#favs {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  justify-content: center;
+  column-gap: 40px;
+}

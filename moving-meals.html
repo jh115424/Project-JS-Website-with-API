@@ -2,16 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Jenny & Rick's Windy City Cuisine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jenny & Rick's Windy City Cuisine</title>
 </head>
 
 <body>
+    <section>
+        <div class="heading">
+            <h5 class="restaurant-name">Jenny & Rick's Windy City Chicago Live Kitchen</h5>
+            <p>Call for tickets: 312-123-4567</p>
+        </div>
 
-    
 
+        <img src="./images/background.jpeg" class="background-image">
+    </section>
+    <section>
+        <div class="collection">Main Collection<br> Recipes cooked by us live!
+
+            <div class="sort">
+                <span>Sort items</span>
+                <button class="sortBtn" type="button" data-sortdir="asc">A-Z</button>
+                <button class="sortBtn" type="button" data-sortdir="desc">Z-A</button>
+
+
+            </div>
+        </div>
+        <div id="main" class="container">
+            <div class="card-header"></div>
+          
+        </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="footer">
+            <h2>Meal Favorites Collection</h2>
+        </div>
+        <!--item list starts-->
+        <div id="favs"></div>
+        <!--item list starts-->
+    </section>
 
     <script src="./move-meals.js"></script>
 </body>
