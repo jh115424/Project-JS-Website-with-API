@@ -68,26 +68,7 @@ const buildCards = (data) => {
         <h3 class= "mealTitle">${meal.strMeal}</h3>
         <h3>${meal.strCategory}</h3>
         <h3>${meal.strArea}</h3><hr>
-        <h3>${meal.strIngredient1}</h3>
-        <h3>${meal.strIngredient2}</h3>
-        <h3>${meal.strIngredient3}</h3>
-        <h3>${meal.strIngredient4}</h3>
-        <h3>${meal.strIngredient5}</h3>
-        <h3>${meal.strIngredient6}</h3>
-        <h3>${meal.strIngredient7}</h3>
-        <h3>${meal.strIngredient8}</h3>
-        <h3>${meal.strIngredient9}</h3>
-        <h3>${meal.strIngredient10}</h3>
-        <h3>${meal.strIngredient11}</h3>
-        <h3>${meal.strIngredient12}</h3>
-        <h3>${meal.strIngredient13}</h3>
-        <h3>${meal.strIngredient14}</h3>
-        <h3>${meal.strIngredient15}</h3>
-        <h3>${meal.strIngredient16}</h3>
-        <h3>${meal.strIngredient17}</h3>
-        <h3>${meal.strIngredient18}</h3>
-        <h3>${meal.strIngredient19}</h3>
-        <h3>${meal.strIngredient20}</h3>
+        <h3>${meal.strInstructions.slice(0, 30)}...</h3>
         <h3>${meal.strInstructions.slice(0, 100)}...</h3> `;
     container.appendChild(mealCard);
   }
@@ -150,7 +131,7 @@ const createCountersCard = (data) => {
     const totalHeader = document.createElement("div");
     totalHeader.classList.add("totalCard");
     totalHeader.id = total.id;
-    totalHeader.innerHTML = `<h3>There are ${countersData[counter]} recipes with ${counter} ingredients.<h3>`;
+    totalHeader.innerHTML = `<div>There are ${countersData[counter]} recipes with ${counter} ingredients.<div>`;
     totalContainer.appendChild(totalHeader);
   }
   console.log(totalContainer);
@@ -168,12 +149,6 @@ const makeTotalCards = (countersData) => {
     makeTotalCards(counter, countersData[counter]);
   }
 };
-
-
-
-
-
-
 
 
 
