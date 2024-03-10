@@ -1,11 +1,11 @@
-body {
+ody {
   background-image: url(http://s3.amazonaws.com/architecture-org/files/buildings/riverwalk-eric-allix-rogers-01.jpg);
-  height: 100%; 
+  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  image-resolution: 500dpi;
- 
+  background-color: beige;
+  position: relative;
 }
 
 .restaurant-name h5 {
@@ -36,7 +36,6 @@ body {
 .footer,
 .collection {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   text-align: center;
   margin-top: 100px;
@@ -69,7 +68,6 @@ body {
   line-height: 2.7;
 }
 
-/* CARDS */
 
 /* cards */
 
@@ -144,13 +142,15 @@ span {
   display: flex;
   margin-top: 10px;
   justify-content: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* buttons */
-.sort {
+.sort,
+.totalAmount {
   width: 225px;
   padding: 10px;
+  font-size: 20px;
   background-color: #f16a8e;
   border-radius: 10px;
   border: 1px solid #e5e5e5;
@@ -158,9 +158,14 @@ span {
   gap: 20px;
 }
 
+.totalAmount {
+  width: 350px;
+}
+
 button {
   border-radius: 7px;
-  width: 50px;
+  width: 70px;
+  background-color: #f1f1f1;
 }
 
 #favs {
@@ -171,4 +176,42 @@ button {
   padding-bottom: 100px;
   justify-content: center;
   column-gap: 40px;
+}
+
+.myTable,
+td {
+  padding: 0.25em;
+}
+
+#val {
+  display: block;
+  margin-top: 0.5em;
+}
+
+#myTable {
+  font-size: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  border-spacing: 30px;
+}
+
+#total {
+  width: fit-content;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  border-radius: 20px;
+  background-color: #f0d6b8;
+  box-shadow: 5px 5px 5px 5px;
+}
+
+.total-header {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
 }

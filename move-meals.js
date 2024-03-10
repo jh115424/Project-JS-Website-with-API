@@ -1,4 +1,5 @@
 const userUrl = "https://www.themealdb.com/api/json/v1/1/search.php?f=f";
+
 const container = document.querySelector(".container");
 const favs = document.getElementById("favs");
 const mainDiv = document.getElementById("main");
@@ -7,6 +8,7 @@ const favsDiv = document.getElementById("favs");
 //puts into favs
 const updateMealRecipes = (id, direction) => {
   const meal = document.getElementById(id);
+
   const parentDiv = meal.parentElement;
   console.log(parentDiv);
   if (direction === "toFavs" && parentDiv === mainDiv) {
@@ -31,11 +33,13 @@ const addClickHandlers = () => {
 };
 
 //populates the cards
+
 async function fetchData() {
   return fetch(userUrl)
     .then((response) => response.json())
     .then((data) => data.meals);
 }
+
 async function loadData(req) {
   return Promise.resolve(req).then((meals) => {
     createCountersCard(meals);
@@ -85,7 +89,6 @@ const buildCards = (data) => {
         <h3>${meal.strIngredient19}</h3>
         <h3>${meal.strIngredient20}</h3>
         <h3>${meal.strInstructions.slice(0, 100)}...</h3> `;
-
     container.appendChild(mealCard);
   }
   console.log(container);
@@ -137,14 +140,20 @@ const createCountersDataObject = (data) => {
   return resObj;
 };
 
+const totalContainer = document.querySelector(".totalContainer");
+const total = document.getElementById("total");
+
 const createCountersCard = (data) => {
   const countersData = createCountersDataObject(data);
   console.log(countersData);
   for (let counter in countersData) {
-    console.log(
-      `There are ${countersData[counter]} recipes with ${counter} ingredients.`
-    );
+    const totalHeader = document.createElement("div");
+    totalHeader.classList.add("totalCard");
+    totalHeader.id = total.id;
+    totalHeader.innerHTML = `<h3>There are ${countersData[counter]} recipes with ${counter} ingredients.<h3>`;
+    totalContainer.appendChild(totalHeader);
   }
+  console.log(totalContainer);
 };
 
 const countersData = {
@@ -159,9 +168,6 @@ const makeTotalCards = (countersData) => {
     makeTotalCards(counter, countersData[counter]);
   }
 };
-
-
-
 
 
 
