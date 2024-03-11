@@ -15,7 +15,7 @@ body {
 .heading {
   margin-left: auto;
   border-radius: 10px;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-right: auto;
   width: 75%;
   height: 75%px;
@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 300px;
   border-radius: 10px;
   font-size: 25px;
   margin-right: auto;
@@ -52,7 +52,7 @@ body {
   display: block;
   height: 325px;
   margin-left: auto;
-  margin-top: 50px;
+  margin-top: 300px;
   border-radius: 10px;
   margin-right: auto;
   width: 50%;
@@ -226,9 +226,19 @@ td {
   .heading {
     align-items: center;
     width: 90%;
+    height: 170px;
     font-size: 27px;
     display: flex;
     flex-direction: column;
+  }
+
+  .footer,
+  .collection {
+    margin-top: 106px;
+  }
+
+  .container {
+    margin-top: 75px;
   }
 
   .totalOfIngredients {
@@ -239,6 +249,7 @@ td {
 
   .background-image {
     width: 75%;
+    margin-top: 65px;
   }
 
   .card {
@@ -254,7 +265,7 @@ td {
   }
 
   .container {
-    margin-top: 50px;
+    margin-top: 15px;
   }
   .heading {
     display: flex;

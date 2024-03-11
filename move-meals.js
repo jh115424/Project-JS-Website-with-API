@@ -149,13 +149,3 @@ const makeTotalCards = (countersData) => {
     makeTotalCards(counter, countersData[counter]);
   }
 };
-
-
-
-
-
-
-
-
-
-
